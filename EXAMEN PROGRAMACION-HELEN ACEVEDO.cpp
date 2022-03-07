@@ -15,6 +15,7 @@ using namespace std;
  int main(){
  
     int opc;
+    bool repetir=true;
  
    do {
      
@@ -87,10 +88,10 @@ using namespace std;
 		 	    
 		 	    
 		 	    for (i=0; i<=10; i++){
-		 	    	if(ca1 %2== 00){
+		 	    	if(vector[i]%2== 00){
 		 	    		pares=pares+1;}
 		 	    		
-		 	    	else {if(ca1 %2>0){
+		 	    	else {if(vector[i]%2>0){
 		 	    		impares=impares+1; }
 					 }
 					 }
@@ -109,6 +110,8 @@ using namespace std;
 				 
 				 }break;	 
 		case 4:{
+			do{
+			
 		 	cout<<"Se le solicita lo siguiente para indicarle si es un dia laboral o no \n";
 		 	cout<<"Ingresa un dia de la semana ya sea en minusculas o mayusculas..\n";
 		     cin>>dia;
@@ -144,8 +147,10 @@ using namespace std;
 		 	       	    	break;
 		 	       	    
 		 	       	    default:
-		 	       	    	cout<<dia<<"Ingrese un dia valido ";    	
+		 	       	    	cout<<dia<<"Ingrese un dia valido ";
+						    	
 					}
+				}while (opc!='domingo');
 			     }break;		
 		case 5:{
 			  const string clave_pin="123456";
@@ -154,29 +159,31 @@ using namespace std;
               cout<<"Ingrese su clave de acceso"<<endl;             
               string clave = "";
               cin>>clave;
-              while (contador!=3){
+              
+              
               	cin>>clave;
               	if (clave==clave_pin){
-              		contador=3;
+                    contador>3;
               		cout<<"La contraseña es correcta,bienvenido";
               	
-				  }else {cout<<"la contraseña es incorrecta vuelva a intentar";
+				  }else {cout<<"la contrasena es incorrecta vuelva a intentar\n";
 				        contador++;
 				  }
-              if (contador==4){
+                 if (contador>4){
               	cout<<"Sera reportado por intento no autorizado";
 			  }	
-			  }                            
+			                             
 	         
 		        }break;
  	    default: 
- 	            cout<<"\t salir\n";
+ 	            repetir =false;
+ 	            break;
  	            
                  } 
 
          }while(opc!=5); 
     
-         getch();
+         
  
          return 0;
        
