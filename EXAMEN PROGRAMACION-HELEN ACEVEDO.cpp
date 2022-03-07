@@ -50,12 +50,13 @@ using namespace std;
  	    	    }break;	
 				  
  	    case 2 :{
-
- 	    	cout <<"\tFavor ingrese el numero a mostrar la tabla de multiplicar que desea:\n";
+ 	    	cout<<"Usted eligio la opcion 02\n";
+            cout<<"\t\t\tTabla de multiplicar de numeros a eleccion\n";
+ 	    	cout <<"\t\t\tFavor ingrese el numero para mostrar la tabla de multiplicar que desea:\t";
  	    	cin>>n;
  	    	    
- 	    	    for (int i=1;i<100000;i++){
- 	    	    	cout<<i<<"*"<<n<<"="<<i*n<<endl;
+ 	    	    for (int i=1;i<11;i++){
+ 	    	    	cout<<"\t\t"<<i<<"*"<<n<<"="<<i*n<<endl;
 				 }
  	    	
  	    	}break; 
