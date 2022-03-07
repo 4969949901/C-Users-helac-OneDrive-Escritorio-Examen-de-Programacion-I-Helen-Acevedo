@@ -22,13 +22,13 @@ using namespace std;
       int n;
       char dia;
       
-     cout<<"\t\t\t\t\t\t******Menu de Opciones******\n";
-     cout<<"\t\t\t\t\t\t1.-Calculo de Factorial de un numero\n";
-     cout<<"\t\t\t\t\t\t2.-Tabla de multiplicar\n";
-     cout<<"\t\t\t\t\t\t3.-Determinacion de numeros pares/impares\n";
-     cout<<"\t\t\t\t\t\t4.-Dia de la semana laboral/no laboral\n";
-     cout<<"\t\t\t\t\t\t5.-Validacion de contrasena -bancaria-\n";
-     cout<<"\t\t\t\t\t\t6.- Salir\n";
+     cout<<"\t\t\t\t\t******Menu de Opciones******\n";
+     cout<<"\t\t\t\t\t1.-Calculo de Factorial de un numero\n";
+     cout<<"\t\t\t\t\t2.-Tabla de multiplicar\n";
+     cout<<"\t\t\t\t\t3.-Determinacion de numeros pares/impares\n";
+     cout<<"\t\t\t\t\t4.-Dia de la semana laboral/no laboral\n";
+     cout<<"\t\t\t\t\t5.-Validacion de contrasena -bancaria-\n";
+     cout<<"\t\t\t\t\t6.- Salir\n";
      cout<<"\n"; 
  
       cout <<"Seleccione una opcion de las que se le muestran en el menu\n";
@@ -38,19 +38,20 @@ using namespace std;
  	    case 1:{
  	     	int num,fact=1;
  	     	
- 		        cout<<"se determinara un factorial segun eleccion\n";
- 	     	    cout<<"Ingrese un numero a eleccion:\n";
+ 		        cout<<"Se determinara un factorial segun eleccion\n";
+ 	     	    cout<<"Ingrese un numero a eleccion:\t";
  	    	    cin>> num;
  		
- 		        for (int x=1; x<= num; x++)fact=fact*x;
+ 		        for (int x=1;x<= num; x++)fact=fact*x;
  		
- 	     	     cout<<"El factorial de:"<<num<<"es:"<<fact;
+ 	     	     cout<<"Se determina que el factorial de:\t"<<num<<"es:\t\n"<<fact;
+ 	     	     cout<<"\n\n";
  	
  	    	    }break;	
 				  
  	    case 2 :{
 
- 	    	cout <<"Favor ingrese el numero a mostrar la tabla de multiplicar que desea:\n";
+ 	    	cout <<"\tFavor ingrese el numero a mostrar la tabla de multiplicar que desea:\n";
  	    	cin>>n;
  	    	    
  	    	    for (int i=1;i<100000;i++){
@@ -151,7 +152,7 @@ using namespace std;
 	         
 		        }break;
  	    default: 
- 	            cout<<"\n\n";
+ 	            cout<<"\t salir\n";
  	            
                  } 
 
