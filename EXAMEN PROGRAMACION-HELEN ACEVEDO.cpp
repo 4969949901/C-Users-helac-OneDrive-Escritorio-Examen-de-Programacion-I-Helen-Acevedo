@@ -111,38 +111,40 @@ using namespace std;
 				 }break;	 
 		case 4:{
 			do{
-			
+			 char dia;
 		 	cout<<"Se le solicita lo siguiente para indicarle si es un dia laboral o no \n";
-		 	cout<<"Ingresa un dia de la semana ya sea en minusculas o mayusculas..\n";
+		 	cout<<"Ingresa un dia de la semana del 1 al 7..\n";
+		 	cout<<"1.-lunes\n2.-martes\n3.-Miercoles\n4.-Jueves\n5.-Viernes\n6.-Sabado\n7.-Domingo\n";
+		 	
 		     cin>>dia;
 		 	    
 		 	       switch (dia){
 		 	       	
-		 	       	    case 'lunes':case 'LUNES':
+		 	       	    case 1:
 		 	       	    	cout<<dia<<"Es un dia laboral";
 		 	       	    	break;
 		 	       	    
-		 	       	    case 'martes':case'MARTES':
+		 	       	    case 2:
 		 	       	    	cout<<dia<<"Es un dia laboral";
 		 	       	    	break;
 		 	       	    	
-		 	       	    case 'miercoles':case 'MIERCOLES':
+		 	       	    case 3:
 		 	       	    	cout<<dia<<"Es un dia laboral";
 		 	       	    	break;
 		 	       	    	
-		 	       	    case 'jueves': case 'JUEVES':
+		 	       	    case 4:
 		 	       	    	cout<<dia<<"Es un dia laboral";
 		 	       	    	break;
 		 	       	    
-		 	       	    case 'viernes': case 'VIERNES':
+		 	       	    case 5: 
 		 	       	    	cout<<dia<<"Es un dia laboral";
 		 	       	    	break;
 		 	       	    	
-		 	       	    case 'sabado':case 'SABADO':
+		 	       	    case 6:
 		 	       	    	cout<<dia<<"Es un dia laboral hasta medio día";
 		 	       	    	break;
 		 	       	    	
-		 	       	    case 'domingo': case'DOMINGO':
+		 	       	    case 7: 
 		 	       	    	cout<<dia<<"No es un dia laboral";
 		 	       	    	break;
 		 	       	    
