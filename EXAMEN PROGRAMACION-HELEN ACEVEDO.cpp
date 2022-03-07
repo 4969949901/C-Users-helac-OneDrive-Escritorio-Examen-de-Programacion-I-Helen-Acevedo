@@ -31,8 +31,9 @@ using namespace std;
      cout<<"\t\t\t\t\t6.- Salir\n";
      cout<<"\n"; 
  
-      cout <<"Seleccione una opcion de las que se le muestran en el menu\n";
+      cout <<"Seleccione una opcion de las que se le muestran en el menu:\t";
       cin>> opc;
+      cout<<"\n\n";
 
         switch (opc){
  	    case 1:{
@@ -57,23 +58,39 @@ using namespace std;
  	    	    
  	    	    for (int i=1;i<11;i++){
  	    	    	cout<<"\t\t"<<i<<"*"<<n<<"="<<i*n<<endl;
+ 	    	    	cout<<"\n\n";
 				 }
  	    	
  	    	}break; 
 		case 3:{
+			cout<<"<\n********************************************************************\n";
+			cout<<"\tUsted eligio la opcion 03\n";
 		 	int vector[10];
-		 	int i,pares,impares;
+		 	int i,pares,impares,ca1;
 		 	float resultado,resultado2;
 		 	pares=0;
 		 	impares=0;   
 		 	   
-		 	    cout<<"Se le solicita que ingrese 10 digitos para el calculo:\n";
+		 	    cout<<"\t\t\nSe le solicita que ingrese 10 digitos para el calculo:\n";
+		 	    cout<<"\t\tsuma de numero pares/impares y promedio de numeros impares\n";
+		 	    
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    cout<<"\t Ingrese un digito a eleccion\t";cin>>ca1;cout<<"\n";
+		 	    
 		 	    
 		 	    for (i=0; i<=10; i++){
-		 	    	if(vector[i]%2== 00){
+		 	    	if(ca1 %2== 00){
 		 	    		pares=pares+1;}
 		 	    		
-		 	    	else {if(vector[i]%2>0){
+		 	    	else {if(ca1 %2>0){
 		 	    		impares=impares+1; }
 					 }
 					 }
